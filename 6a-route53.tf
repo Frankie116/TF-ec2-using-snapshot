@@ -5,7 +5,7 @@
 
 # req:
 # 3a-eip.tf           - [data.aws_eip.my-eip.public_ip]
-# variables.tf        - var.my-existing-r53-zone           # this variable should point to an exiting r53 hosted zone
+# variables.tf        - var.my-existing-r53-zone                # this variable should point to an exiting r53 hosted zone
 # variables.tf        - var.my-servername
 
 
@@ -20,7 +20,7 @@ resource "aws_route53_record" "my-r53-record" {
   type                       = "A"
 
   alias {
-      zone_id                = "ZHURV8PSTC4K8"             # https://docs.aws.amazon.com/general/latest/gr/elb.html
+      zone_id                = var.my-elb-hosted-zone        # https://docs.aws.amazon.com/general/latest/gr/elb.html
       name                   = aws_lb.my-alb.dns_name
       evaluate_target_health = false
     }

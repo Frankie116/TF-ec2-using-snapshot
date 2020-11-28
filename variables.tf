@@ -15,7 +15,7 @@ variable my-region {
 variable my-project-name {
   description           = "Name of the project. Used in resource names and tags."
   type                  = string
-  default               = "lab039"
+  default               = "lab000"
 }
 
 variable my-environment {
@@ -129,9 +129,12 @@ variable my-scriptfile {
 
 # 6a-route53.tf ---------------------------------------------------------
 variable "my-existing-r53-zone" {
-    default             = "intracom.uk"
+    default             = "redacted.com"
 }
 
+variable "my-elb-hosted-zone" {
+    default             = "ZHREDACTEDK8"
+}
 
 
 
