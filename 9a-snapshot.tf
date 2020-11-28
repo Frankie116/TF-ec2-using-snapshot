@@ -1,6 +1,6 @@
 # ---------------------------------------------------------------------------------------------------
-# Library: /mygit/frankie116/library/
-# use an existing snapshot named 
+# Library: /mygit/frankie116/library/v1.2
+# use an existing snapshot named "my-snapshot-latest"
 # ---------------------------------------------------------------------------------------------------
 
 # req:

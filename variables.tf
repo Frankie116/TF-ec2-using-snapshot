@@ -1,5 +1,5 @@
 # ---------------------------------------------------------------------------------------------------
-# Library: /mygit/frankie116/library/
+# Library: /mygit/frankie116/library/v1.2
 # variables used in this project
 # ---------------------------------------------------------------------------------------------------
 
@@ -9,6 +9,7 @@ variable my-region {
   type                  = string
   default               = "eu-west-2"
 }
+
 
 # various ----------------------------------------------------------------
 variable my-project-name {
@@ -22,6 +23,7 @@ variable my-environment {
   type                  = string
   default               = "dev"
 }
+
 
 # 1a-vpc.tf -------------------------------------------------------------
 variable my-vpc-cidr-block {
@@ -88,7 +90,8 @@ variable my-pub-subnet-cidr-blocks {
   ]
 }
 
-# 2a-ec2-choose-ami.tf -------------------------------------------------------------
+
+# 2a-ec2-choose-ami.tf ----------------------------------------------------
 variable my-instances-per-subnet {
   description           = "Number of EC2 instances in each private subnet"
   type                  = number
@@ -112,12 +115,22 @@ variable my-servername {
 }
 
 
-# 9c-template-file.tf -------------------------------------------------------------
+# 3a-eip.tf -------------------------------------------------------------
+variable "my-existing-eip" {
+    default             = "my-existing-eip"
+}
+
+
+# 9c-template-file.tf ---------------------------------------------------
 variable my-scriptfile {
     default             = "scripts/my-script-any.sh"
 }
 
 
+# 6a-route53.tf ---------------------------------------------------------
+variable "my-existing-r53-zone" {
+    default             = "intracom.uk"
+}
 
 
 

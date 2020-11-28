@@ -25,3 +25,7 @@ Refactored code to be more streamlined
 
 Changelog-008
 Refactored code to be more streamlined & modular
+
+Changelog-009
+Refactored code to be more streamlined & modular
+Added route53 record, so privately hosted dns name can be used to point to alb.

@@ -1,5 +1,5 @@
 # ---------------------------------------------------------------------------------------------------
-# Library: /mygit/frankie116/library/
+# Library: /mygit/frankie116/library/v1.2
 # creates an application load balancer
 # ---------------------------------------------------------------------------------------------------
 
@@ -17,6 +17,7 @@ resource "aws_lb" "my-alb" {
   load_balancer_type     = "application"
   security_groups        = [module.my-lb-sg.this_security_group_id]
   subnets                = module.my-vpc.public_subnets
+  
   tags                   = {
     Name                 = "my-alb-${random_string.my-random-string.result}"
     Terraform            = "true"

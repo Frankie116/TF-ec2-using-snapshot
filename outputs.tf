@@ -1,5 +1,5 @@
 # ---------------------------------------------------------------------------------------------------
-# Library: /mygit/frankie116/library/
+# Library: /mygit/frankie116/library/v1.2
 # output values
 # ---------------------------------------------------------------------------------------------------
 
@@ -18,12 +18,17 @@ output these-instance-ids {
 
 
 # 4a-lb-alb.tf ----------------------------------------------------------
-output this-public-dns-name {
-  description          = "Public DNS name of load balancer"
+output this-original-dns-name {
+  description          = "Original Public DNS name of load balancer"
   value                = aws_lb.my-alb.dns_name
 }
 
 
+# 6a-route53.tf ----------------------------------------------------------
+output this-new-dns-name {
+  description          = "New Public DNS name of loadbalancer's route53 A record"
+  value                = aws_route53_record.my-r53-record.fqdn
+}
 
 
 
