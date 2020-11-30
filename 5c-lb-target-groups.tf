@@ -17,6 +17,7 @@ resource "aws_lb_target_group" "my-lb-target-group" {
   port                  = 8080
   protocol              = "HTTP"
   vpc_id                = module.my-vpc.vpc_id
+
   tags                  = {
     Name                = "my-lb-target-group-${random_string.my-random-string.result}"
     Terraform           = "true"

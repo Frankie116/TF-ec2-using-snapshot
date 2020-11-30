@@ -77,7 +77,7 @@ Author: Frank Effrim-Botchey
 
 [01] Enable multiple servers to be created on same network infrastructure [Done]
 
-[02] Enable loadbancing using aws elb.
+[02] Enable loadbancing using aws elb. [Done]
 
 [03] Configure jenkins in a cluster and save build as new snapshot
 
