@@ -29,3 +29,6 @@ Refactored code to be more streamlined & modular
 Changelog-009
 Refactored code to be more streamlined & modular
 Added route53 record, so privately hosted dns name can be used to point to alb.
+
+Changelog-009
+Added the creation of an s3 bucket that stores the lb logs

@@ -9,5 +9,6 @@
 
 resource "random_string" "my-random-string" {
   length                = 3
+  min_lower             = 3
   special               = false
 }
