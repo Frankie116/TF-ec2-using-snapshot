@@ -1,6 +1,6 @@
 BRANCH "master" 
 Changelog-001
-Intial code evolved from previous projects lab035 & lab037-jenkins-server
+Initial code evolved from previous projects lab035 & lab037-jenkins-server
 
 Changelog-002
 updated readme & uploaded build scripts.
@@ -32,3 +32,6 @@ Added route53 record, so privately hosted dns name can be used to point to alb.
 
 Changelog-009
 Added the creation of an s3 bucket that stores the lb logs
+
+Changelog-010
+Removed 1b-az-available.tf and put code into 1a-vpc.tf

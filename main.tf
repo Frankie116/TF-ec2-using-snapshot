@@ -19,7 +19,7 @@ terraform {
 
 
 provider "aws" {
-  region                 = var.my-region
+  region                 = var.my-aws-region
 }
 
 

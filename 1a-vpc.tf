@@ -4,7 +4,6 @@
 # ---------------------------------------------------------------------------------------------------
 
 # req:
-# 1b-az-available.tf  - data.aws_availability_zones.my-available-azs.names
 # 9b-random-string.tf - random_string.my-random-string.result
 # variables.tf        - var.my-vpc-cidr-block
 # variables.tf        - var.my-priv-subnet-cidr-blocks
@@ -28,4 +27,8 @@ module "my-vpc" {
     Environment          = var.my-environment
     Terraform            = "true"
   }
+}
+
+data "aws_availability_zones" "my-available-azs" {
+  state                = "available"
 }

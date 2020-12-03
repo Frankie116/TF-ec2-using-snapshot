@@ -4,7 +4,7 @@
 # ---------------------------------------------------------------------------------------------------
 
 # main.tf -------------------------------------------------------------
-variable my-region {
+variable my-aws-region {
   description           = "AWS region"
   type                  = string
   default               = "eu-west-2"
