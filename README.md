@@ -1,5 +1,5 @@
 # ----------------------------
-# lab038-jenkins-cluster
+# Project: TF-ec2-using-snapshot
 Author: Frank Effrim-Botchey
 # ----------------------------
 
