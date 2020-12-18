@@ -1,5 +1,5 @@
 # ----------------------------
-# Project: TF-ec2-using-snapshot
+# TF-ec2-using-snapshot
 Author: Frank Effrim-Botchey
 # ----------------------------
 
