@@ -1,6 +1,6 @@
 ----------------------------
 
-## Project: TF-ec2-using-snapshot
+## Project: TF07-ec2-using-snapshot
 
 Author: Frank Effrim-Botchey
 
