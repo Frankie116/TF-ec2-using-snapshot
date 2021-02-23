@@ -12,9 +12,9 @@ Author: Frank Effrim-Botchey
 Part 1 Main Objectives
 
 --------------------------
-[00] Build/refactor code that is re-usable and streamlined
+[01] Build/refactor code that is re-usable and streamlined
 
-[01] Use Terrafrom/Private modules to enable the following AWS resources to be built on a terraform run: [Done]
+[02] Use Terrafrom/Private modules to enable the following AWS resources to be built on a terraform run: [Done]
 
     - Multiple EC2 instances 
 
@@ -38,15 +38,15 @@ Part 1 Main Objectives
 
     - Elastic Loadbalancer
 
-[02] Enable the same EIP to persist even after a Terraform destroy & re-apply 
+[03] Enable the same EIP to persist even after a Terraform destroy & re-apply 
 
-[03] Use Route53 to auto create dns record in specific Hosted Zone for Jenkins server during TF run [Done]
+[04] Use Route53 to auto create dns record in specific Hosted Zone for Jenkins server during TF run [Done]
 
-[04] Use dns name to connect to Jenkins Server [Done]
+[05] Use dns name to connect to Jenkins Server [Done]
 
-[05] Open Server SG to allow access to Jenkins server (port 8080) [Done]
+[06] Open Server SG to allow access to Jenkins server (port 8080) [Done]
 
-[06] Execute a Terraform run to build the above resources.  [Done]
+[07] Execute a Terraform run to build the above resources.  [Done]
 
         - User should be able to connect to a single jenkins server using its dns name on port 8080.  
 
