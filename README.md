@@ -14,7 +14,7 @@ Part 1 Main Objectives
 --------------------------
 [01] Build/refactor code that is re-usable and streamlined
 
-[02] Use Terrafrom/Private modules to enable the following AWS resources to be built on a terraform run: [Done]
+[02] Use Terraform/Private modules to enable the following AWS resources to be built on a terraform run: [Done]
 
     - Multiple EC2 instances 
 
